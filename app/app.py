@@ -19,5 +19,22 @@ def login():
             error = "Invalid email / password!"
     return render_template("login.html")
 
+@app.route('/signup', methods=['GET', 'POST'])
+def signup():
+    error = ""
+    if request.method == "POST":
+        user_name = request.form['inputName']
+        user_email = request.form['inputEmail']
+        password = request.form['inputPassword']
+        if Users().create_user(user_name, user_email, password) == "okay":
+            return redirect(url_for('login'))
+        elif Users().create_user(user_name, user_email, password) == "similar email":
+            error = user_email+" is already a registered user"
+        elif Users().create_user(user_name, user_email, password) == "similar name":
+            error = user_name+" is already registered user"
+        else:
+            error = "Invalid inputs in the above fields, try again."
+    return render_template("Register.html")
+
 if __name__ == "__main__":
     app.run()

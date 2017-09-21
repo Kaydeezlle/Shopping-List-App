@@ -23,10 +23,10 @@ class Users(object):
         '''method for creating new users'''
         for user_object in self.users:
             if user_object.user_email == user_email:
-                return "same email"
+                return "Similar emial address exists"
         for user_object in self.users:
             if user_object.user_name == user_name:
-                return "same name"
+                return "Username already exists"
         if user_name != "" and user_email != "" and password != "":
             user = Users(user_name, user_email, password)
             self.users.append(user)

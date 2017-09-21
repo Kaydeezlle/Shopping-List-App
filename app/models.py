@@ -32,11 +32,11 @@ class Users(object):
             self.users.append(user)
             return "Okay"
 
-    def login_user(self, user_email, password):
+    def login_user(self, user_email, user_password):
         '''method for logging in a user'''
         global USER_ID
         for member in self.users:
-            if member.user_email == user_email and member.user_password == password:
+            if member.user_email == user_email and member.user_password == user_password:
                 USER_ID = self.users.index(member)
                 return True
 

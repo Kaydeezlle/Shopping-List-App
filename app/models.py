@@ -18,3 +18,24 @@ class Users(object):
             self.user_name = None
             self.user_email = None
             self.user_password = None
+    
+    def create_user(self, user_name, user_email, password):
+        #method for creating new users
+        for user_object in self.users:
+            if user_object.user_email == user_email:
+                return "same email"
+        for user_object in self.users:
+            if user_object.user_name == user_name:
+                return "same name"
+        if user_name != "" and user_email != "" and password != "":
+            user = Users(user_name, user_email, password)
+            self.users.append(user)
+            return "Okay"
+
+    def login_user(self, user_email, password):
+        #method for logging in a user
+        global USER_ID
+        for member in self.users:
+            if member.user_email == user_email and member.user_password == password:
+                USER_ID = self.users.index(member)
+                return True

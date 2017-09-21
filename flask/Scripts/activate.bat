@@ -1,5 +1,5 @@
 @echo off
-set "VIRTUAL_ENV=D:\My stuff\Andela\Challenge\Shopping List App\flask"
+set "VIRTUAL_ENV=D:\Andela\Shopping List App\Shopping-List-App\flask"
 
 if defined _OLD_VIRTUAL_PROMPT (
     set "PROMPT=%_OLD_VIRTUAL_PROMPT%"

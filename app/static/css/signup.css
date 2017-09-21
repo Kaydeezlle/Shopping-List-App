@@ -1,0 +1,130 @@
+*{
+    box-sizing: border-box;
+}
+  html,body {
+    margin-top: 10px;
+    height: 100%;
+  }
+  #logo {
+    background-size: cover;
+    display: block;
+    font-family: 'Amatic SC', cursive;
+    padding: 10px 10px;
+    border-radius: 5px;
+    float: left;
+    margin-left: 5px;
+    color: #0B34EE;
+  }
+  #navbtn {
+    background-size: contain;
+    font-family: 'Indie Flower', cursive;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    padding: 10px 25px;
+    border-radius: 5px;
+    float: right;
+    width: 40%;
+    margin-right: 5px;
+  }
+  li{
+    color: #1066E7;
+    display: inline;
+    padding: 3px 10px;
+    border-radius: 5px;
+    margin: 1px;
+  }
+  .footer{
+    background-color: #466995;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    background-size: contain;
+    width: 100%;
+  }
+  #slogan {
+    color: #39F10B;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    font-size: 25px;
+    font-style: italic;
+    font-family: "Oleo Script";
+  }
+  a {
+    text-decoration: none;
+  }
+  p {
+    margin: 1px;
+  }
+  li, #navbtn2 {
+    font-weight: bold;
+  }
+  #home, #login, #signup {
+    font-size: 18px;
+    background-color: #4CAF50;
+    color: #240DEE;
+  }
+  #logo, #navbtn, .footer {
+    background-image: url("http://mytravelosophy.net/wp-content/uploads/2016/07/bucketlist-icon.png");
+  }
+  #logo, #navbtn {
+    border: 1px solid #0EEC16;
+  }
+  .content {
+    overflow-y: auto;
+    padding: 50px 50px;
+    position: relative;
+    top: 40px;
+    left: 0;
+    width: 100%;
+  }.form-signin {
+    width: 60%;
+    max-width: 350px;
+    padding: 50px;
+    margin: 0 auto;
+  }
+  .form-signin .form-signin-heading,
+  .form-signin .checkbox {
+    margin-bottom: 10px;
+  }
+  .form-signin .checkbox {
+    font-weight: normal;
+  }
+  .form-signin .form-control {
+    position: relative;
+    height: auto;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 10px;
+    font-size: 16px;
+  }
+  .form-signin .form-control:focus {
+    z-index: 2;
+  }
+  .form-signin input[type="email"] {
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  .form-signin input[type="password"] {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+  .jumbotron{
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 50%;
+    margin: auto;
+    border-radius: 10px;
+  }

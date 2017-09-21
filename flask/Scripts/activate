@@ -40,7 +40,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="$(if [ "$OSTYPE" "==" "cygwin" ]; then cygpath -u 'D:\My stuff\Andela\Challenge\Shopping List App\flask'; else echo '/D/My stuff/Andela/Challenge/Shopping List App/flask'; fi;)"
+VIRTUAL_ENV="$(if [ "$OSTYPE" "==" "cygwin" ]; then cygpath -u 'D:\Andela\Shopping List App\Shopping-List-App\flask'; else echo '/D/Andela/Shopping List App/Shopping-List-App/flask'; fi;)"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"

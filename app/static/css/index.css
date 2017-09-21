@@ -1,0 +1,103 @@
+*{
+    box-sizing: border-box;
+}
+  html,body {
+    margin: 2;
+    height: 100%;
+  }
+  #logo {
+    background-size: cover;
+    display: block;
+    font-family: 'Amatic SC', cursive;
+    padding: 10px 10px;
+    border-radius: 5px;
+    float: left;
+    margin-left: 5px;
+    color: #0B34EE;
+  }
+  #navbtn {
+    background-size: contain;
+    font-family: 'Indie Flower', cursive;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    padding: 10px 25px;
+    border-radius: 5px;
+    float: right;
+    width: 40%;
+    margin-right: 5px;
+  }
+  #navbtn2 {
+    border: 100px;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    padding: 150px 5px;
+    border-radius: 5px;
+    width: 75%;
+    margin: 100px;
+  }
+  li{
+    color: #1066E7;
+    display: inline;
+    padding: 3px 10px;
+    border-radius: 5px;
+    margin: 1px;
+  }
+  .create_or_view {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-y: auto;
+    width: 100%;
+    position: relative;
+    top: 88px;
+    left: 0px;
+    float: right;
+    padding: 1px 1px;
+    margin: 0;
+  }
+  .footer{
+    background-color: #466995;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    background-size: contain;
+    width: 100%;
+  }
+  #slogan {
+    color: #39F10B;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    font-size: 25px;
+    font-style: italic;
+    font-family: "Oleo Script";
+  }
+  a {
+    text-decoration: none;
+  }
+  p {
+    margin: 1px;
+  }
+  li, #navbtn2 {
+    font-weight: bold;
+  }
+  #home, #login, #signup, #get_started, #my_shopping_list {
+    font-size: 18px;
+    background-color: #4CAF50;
+    color: #240DEE;
+  }
+  #logo, #navbtn, .footer {
+    background-image: url("http://mytravelosophy.net/wp-content/uploads/2016/07/bucketlist-icon.png");
+  }
+  #logo, #navbtn {
+    border: 1px solid #0EEC16;
+  }

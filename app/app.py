@@ -34,7 +34,7 @@ def signup():
             error = user_name+" is already registered user"
         else:
             error = "Invalid inputs in the above fields, try again."
-    return render_template("Register.html")
+    return render_template("signup.html")
 
 if __name__ == "__main__":
     app.run()

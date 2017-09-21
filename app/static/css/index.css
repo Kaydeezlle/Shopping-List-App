@@ -90,7 +90,7 @@
   li, #navbtn2 {
     font-weight: bold;
   }
-  #home, #login, #signup, #get_started, #my_shopping_list {
+  #home, #login, #signup, #get_started, #my_shopping_list, #User {
     font-size: 18px;
     background-color: #4CAF50;
     color: #240DEE;

@@ -3,9 +3,11 @@ from flask import flash, render_template, request, redirect, url_for
 from models import Users
 app = Flask(__name__)
 
-@app.route("/")
+
+@app.route("/index")
 def main():
     return render_template('index.html')
+
 
 @app.route('/login', methods=['GET', 'POST'])
 def login():
@@ -19,6 +21,7 @@ def login():
             error = "Invalid email / password!"
     return render_template("login.html")
 
+
 @app.route('/signup', methods=['GET', 'POST'])
 def signup():
     error = ""
@@ -29,12 +32,13 @@ def signup():
         if Users().create_user(user_name, user_email, password) == "okay":
             return redirect(url_for('login'))
         elif Users().create_user(user_name, user_email, password) == "similar email":
-            error = user_email+" is already a registered user"
+            error = user_email + " is already a registered user"
         elif Users().create_user(user_name, user_email, password) == "similar name":
-            error = user_name+" is already registered user"
+            error = user_name + " is already registered user"
         else:
             error = "Invalid inputs in the above fields, try again."
     return render_template("signup.html")
+
 
 if __name__ == "__main__":
     app.run()
